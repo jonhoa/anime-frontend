@@ -21,7 +21,7 @@ export function Content() {
   return (
     <div>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home items={items}/>} />
         <Route path="/" element={<Home />} />
         <Route path="/all" element={<ProductsIndex items ={items} />} />
         <Route path="/Login" element={<Login />} />

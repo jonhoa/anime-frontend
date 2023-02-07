@@ -1,8 +1,10 @@
 
-export function Home() { 
+export function Home(props) { 
   return (
-    <div>
-      <h1>HomePAGE</h1>
-    </div>
+    props.items.map(items => (
+      <div key ={items.id}>
+        <img src ={items.image_url} width ="300" height="300"></img>
+      </div>
+    ))
   );
 }
