@@ -1,8 +1,12 @@
 export function ProductsIndex(props) { 
-  console.log(props.items)
+  console.log(props.items);
+
   return (
-    <div>
-      <h1> Titles Index Page</h1>
-    </div>
+    props.items.map(items => (
+      <div key ={items.id}>
+        <img src ={items.image_url} width ="300" height="300"></img>
+        <p align="right">{items.description}</p>
+      </div>
+    ))
   );
 }

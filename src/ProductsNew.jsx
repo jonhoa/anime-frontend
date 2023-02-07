@@ -1,7 +1,7 @@
 export function ProductsNew() { 
   return (
     <div>
-      <h1>Titles New Page</h1>
+      <h1>Image carouel goes here</h1>
     </div>
   );
 }
