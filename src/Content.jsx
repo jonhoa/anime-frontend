@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { ProductsNew } from './ProductsNew';
 import { ProductsIndex } from './ProductsIndex';
+import { Login } from './Login';
 import axios from 'axios';
 
 export function Content() {
@@ -13,10 +14,12 @@ export function Content() {
     });
   }
   useEffect(handleProductsIndex, []);
-  
+
   return (
     <div>
       <ProductsNew />
+      <Login />
+      <br/>
       <ProductsIndex items ={items} />
     </div>
   );
