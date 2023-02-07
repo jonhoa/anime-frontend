@@ -4,6 +4,7 @@ import { ProductsNew } from './ProductsNew';
 import { ProductsIndex } from './ProductsIndex';
 import { Login } from './Login';
 import axios from 'axios';
+import { Signup } from './Signup';
 
 export function Content() {
   const [items, setItems] = useState([]);
@@ -19,6 +20,8 @@ export function Content() {
     <div>
       <ProductsNew />
       <Login />
+      <br/>
+      <Signup/>
       <br/>
       <ProductsIndex items ={items} />
     </div>
