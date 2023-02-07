@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { ProductsNew } from './ProductsNew';
 import { ProductsIndex } from './ProductsIndex';
 import { Login } from './Login';
 import axios from 'axios';
 import { Signup } from './Signup';
+import { Home } from './Home';
 
 export function Content() {
   const [items, setItems] = useState([]);
@@ -18,12 +20,14 @@ export function Content() {
 
   return (
     <div>
-      <ProductsNew />
-      <Login />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/all" element={<ProductsIndex items ={items} />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+      </Routes>
       <br/>
-      <Signup/>
-      <br/>
-      <ProductsIndex items ={items} />
     </div>
   );
 }

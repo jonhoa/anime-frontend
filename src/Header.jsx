@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import { Login } from "./Login";
+
 export function Header() { 
   return (
     <div>
       <header>
-        <a href ="">Home | </a>
-        <a href ="">About | </a>
-        <a href ="">Login | </a>
+        <Link to="/home">Home </Link>
+        <Link to="/login">Login </Link>
+        <Link to="/signup">Signup </Link>
+        <Link to="/all">Animes </Link>
       </header>
     </div>
   );
