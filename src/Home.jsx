@@ -4,17 +4,16 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export function Home(props) { 
-  // How to fetch database records independently without looping
-  // want to create a card but without having to use .map to paste the images
+  // what happens if i have 200 records? will it create 200 carousel images? if so how can i limit it to only 3!
   return (
     <div>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-      {props.items.map(title => (
-          <div class="carousel-item active">
-            <img src={title.image_url} class="d-block w-100" height ="150" width ="150" alt="..."/>
-          </div>
-      ))}
+          {props.items.map(title => (
+            <div class="carousel-item active">
+              <img src={title.image_url} class="d-block w-100" height ='300' alt="..."/>
+            </div>
+          ))}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

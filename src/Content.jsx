@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ProductsNew } from './ProductsNew';
 import { ProductsIndex } from './ProductsIndex';
+import { AnimeShow } from './AnimeShow';
 import { Login } from './Login';
 import axios from 'axios';
 import { Signup } from './Signup';
@@ -26,6 +27,7 @@ export function Content() {
         <Route path="/all" element={<ProductsIndex items ={items} />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/anime/:id" element={<AnimeShow />} />
       </Routes>
       <br/>
     </div>
