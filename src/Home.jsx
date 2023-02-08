@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { AnimeShow } from "./AnimeShow";
+import { Link } from "react-router-dom";
 
 export function Home(props) { 
   // what happens if i have 200 records? will it create 200 carousel images? if so how can i limit it to only 3!
@@ -11,7 +13,9 @@ export function Home(props) {
         <div class="carousel-inner">
           {props.items.map(title => (
             <div class="carousel-item active">
-              <img src={title.image_url} class="d-block w-100" height ='300' alt="..."/>
+              <Link to={'/anime/' + title.id}>
+                <img src={title.image_url} class="d-block w-100" height ='300' alt="..."/>
+              </Link>
             </div>
           ))}
         </div>
@@ -29,7 +33,9 @@ export function Home(props) {
         {props.items.map(title => (
           <div class="col h-100">
             <div>
-              <img src={title.image_url} class="img-thumbnail" height ="150" alt="..."/>
+              <Link to={'/anime/' + title.id}>
+                <img src={title.image_url} class="img-thumbnail" height ="150" alt="..."/>
+              </Link>
               <div class="card-footer">
                 <small class="text-muted">{title.name}</small>
               </div>

@@ -16,7 +16,7 @@ export function Content() {
       console.log(response.data);
       setItems(response.data);
     });
-  }
+  };
   useEffect(handleProductsIndex, []);
 
   return (

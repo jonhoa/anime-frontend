@@ -9,7 +9,7 @@ export function AnimeShow() {
 
   const handleShow = () => {
     console.log(params.id);
-    axios.get(`http://localhost:3000/items/${params.id}`).then(response =>{
+    axios.get(`http://localhost:3000/anime/${params.id}`).then(response =>{
       console.log(response.data);
       setShow(response.data);
     }

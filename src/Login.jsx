@@ -11,7 +11,7 @@ export function Login() {
       console.log(response.data);
       event.target.reset();
       console.log("logged in");
-    })
+    });
   };
   
   return (
