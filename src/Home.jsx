@@ -33,8 +33,8 @@ export function Home(props) {
       <div class="row row-cols-1 row-cols-md-4 g-4">
         {/* <div class="card">
           <div class="card-header">Popular</div> */}
-          {/* <ul class="list-group list-group-flush"> */}
-            {/* <li class="list-group-item">
+        {/* <ul class="list-group list-group-flush"> */}
+        {/* <li class="list-group-item">
               <div class="row row-cols-1">
                 <div class="col-md-4">
                   <img src="https://samdrewtakeson.com/wp-content/uploads/2022/11/Bleach-Thousand-Year-Blood-War-Episode-9-Release-Date-800x600.jpg" class="img-fluid rounded-start" alt="..."/>
@@ -47,7 +47,7 @@ export function Home(props) {
               </div>
             </li> */}
 
-            {/* <li class="list-group-item">
+        {/* <li class="list-group-item">
               <div class="row row-cols-1">
                 <div class="col-md-4">
                   <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Mob-Psycho-100-Season-3-1-scaled-e1634624616827.jpg" class="img-fluid rounded-start" alt="..."/>

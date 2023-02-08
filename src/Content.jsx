@@ -8,6 +8,7 @@ import { Login } from './Login';
 import axios from 'axios';
 import { Signup } from './Signup';
 import { Home } from './Home';
+import { Profile } from './Profile';
 
 export function Content() {
   const [items, setItems] = useState([]);
@@ -28,6 +29,7 @@ export function Content() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/anime/:id" element={<AnimeShow />} />
+        <Route path="/profile/:id" element={<Profile />} />
       </Routes>
       <br/>
     </div>

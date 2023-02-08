@@ -12,7 +12,7 @@ export function Signup() {
       event.target.reset();
   });
   };
-
+ 
   return (
     <div>
       <h1> Sign Up</h1>

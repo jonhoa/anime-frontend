@@ -10,7 +10,6 @@ import { Content } from './Content';
 import { Login } from './Login';
 import { ProductsIndex } from './ProductsIndex';
 
-
 function App() {
   
   return (
