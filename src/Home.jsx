@@ -1,10 +1,25 @@
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export function Home(props) { 
+export function Home() { 
+  const params = useParams();
+  const [titles, setTitles] = useState([]);
+
+  const handleTitles = () => {
+    axios.get("http://localhost:3000/all").then(response =>{
+      console.log(response.data);
+      setTitles(response.data);
+    }
+    );
+  };
+
+  useEffect(handleTitles, []);
+
+
+  console.log(titles.name);
   return (
-    props.items.map(items => (
-      <div key ={items.id}>
-        <img src ={items.image_url} width ="300" height="300"></img>
-      </div>
-    ))
+    <h1>Home</h1>
   );
 }

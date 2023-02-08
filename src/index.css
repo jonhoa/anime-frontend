@@ -74,3 +74,11 @@ button:focus-visible {
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  color: white;
+}
+.nav-link {
+  color: white;
+  font-style: bold;
+}
