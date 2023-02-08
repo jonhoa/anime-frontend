@@ -18,10 +18,15 @@ export function AnimeShow() {
 
   useEffect(handleShow, []);
   return (
-    <div>
-      <h1>{anime.name}</h1>
-      <img src={anime.image_url} width="300" height="300" justify="left"/>
-      <p>{anime.description}</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src={anime.image_url} alt="..." width="300" height="300" class="img-thumbnail pull-left"/>
+      </div>
+      <div class="col-sm-8">
+        <h1>{anime.name}</h1>
+        <p>{anime.description}</p>
+      </div>
+      <button type ="submit" class="btn btn-success">Add to Favorites</button>
     </div>
   );
- }
+}
