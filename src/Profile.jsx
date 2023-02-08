@@ -22,7 +22,8 @@ export function Profile() {
 
   return (
     <div>
-      <h1>Welcome {user} to Your Profile Tab</h1>
+      <h1>Welcome {user["name"]} to Your Profile Tab</h1>
+      <img src ={user["pic"]}/>
       <p>Display your favorite titles</p>
       <p>Add favorites</p>
       <p>Remove favorites here</p>
