@@ -25,8 +25,8 @@ export function AnimeShow() {
       <div class="col-sm-8">
         <h1>{anime.name}</h1>
         <p>{anime.description}</p>
+        <button type ="submit" class="btn btn-success">Add to Favorites</button>
       </div>
-      <button type ="submit" class="btn btn-success">Add to Favorites</button>
     </div>
   );
 }

@@ -24,22 +24,19 @@ export function Home(props) {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      {props.items.map(title => (
-        <div key = {title.id}>
-          <div class = "container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card h-100">
-                  <img src={title.image_url} class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">{title.name}</h5>
-                  </div>
-                </div>
+      {/* card */}
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {props.items.map(title => (
+          <div class="col h-100">
+            <div>
+              <img src={title.image_url} class="img-thumbnail" height ="150" alt="..."/>
+              <div class="card-footer">
+                <small class="text-muted">{title.name}</small>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
