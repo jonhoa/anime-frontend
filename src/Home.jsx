@@ -28,8 +28,57 @@ export function Home(props) {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      {/* card */}
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      {/* popular tab */}
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col h-100"> <br/>
+          <h5>Popular</h5><hr/>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://samdrewtakeson.com/wp-content/uploads/2022/11/Bleach-Thousand-Year-Blood-War-Episode-9-Release-Date-800x600.jpg" class="img-fluid rounded-start" alt="..."/>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bleach</h5>
+                <small class="text-muted">Updated 3 mins ago</small>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Mob-Psycho-100-Season-3-1-scaled-e1634624616827.jpg" class="img-fluid rounded-start" alt="..."/>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Mob Psycho 100 III</h5>
+                <small class="text-muted">Updated 13 mins ago</small>
+                <hr/>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2021/11/gantz.jpg" class="img-fluid rounded-start" alt="..."/>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Gantz</h5>
+                <small class="text-muted">Updated 5 mins ago</small>
+                <hr/>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        
+        {/* card */}
         {props.items.map(title => (
           <div class="col h-100">
             <div>
