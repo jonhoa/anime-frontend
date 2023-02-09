@@ -5,6 +5,7 @@ import { ProductsNew } from './ProductsNew';
 import { ProductsIndex } from './ProductsIndex';
 import { AnimeShow } from './AnimeShow';
 import { Login } from './Login';
+import { Logout } from './Logout';
 import axios from 'axios';
 import { Signup } from './Signup';
 import { Home } from './Home';
@@ -28,6 +29,7 @@ export function Content() {
         <Route path="/" element={<Home />} />
         <Route path="/all" element={<ProductsIndex items ={items} />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Logout" element={<Logout />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/anime/:id" element={<AnimeShow />} />
         <Route path="/profile/:id" element={<Profile />} />
