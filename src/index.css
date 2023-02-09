@@ -1,4 +1,4 @@
-/* :root {
+/* /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
 a {
   font-weight: 500;
@@ -24,9 +24,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  /* margin: 0;
+  display: flex; */
+  /* linear-gradient(#1e1e2f, #1e1e24); */
+  /* place-items: center; */
+  background: linear-gradient(#282877, #1e1e24);
   min-width: 320px;
   min-height: 100vh;
 }
@@ -81,4 +83,12 @@ a {
 .nav-link {
   color: white;
   font-style: bold;
+}
+
+.div-login {
+  background-color: rgba(242, 222, 222, 0.327);
+}
+
+p {
+  color: #998d8d;
 }
