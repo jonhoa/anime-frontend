@@ -16,6 +16,10 @@ export function AnimeShow() {
     );
   };
 
+  const handleAddFavorite = () => {
+    console.log("Clicked on " + anime.name);
+  };
+
   useEffect(handleShow, []);
   return (
     <div class="row">
@@ -26,7 +30,7 @@ export function AnimeShow() {
         <h1>{anime.name}</h1>
         <p>{anime.description}</p>
         {/* if logged in and jwt is available, show add favorite button */}
-        <button type ="submit" class="btn btn-success">Add to Favorites</button>
+        <button type ="submit" class="btn btn-success" onClick={handleAddFavorite}>Add to Favorites</button>
         <h2>Reviews</h2> <hr/>
         {/* add other user reviews here */}
         <p>Anonymous: 'Very good'</p>

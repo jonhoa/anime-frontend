@@ -32,7 +32,7 @@ export function Content() {
         <Route path="/Logout" element={<Logout />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/anime/:id" element={<AnimeShow />} />
-        <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/profile/current" element={<Profile />} />
       </Routes>
       <br/>
     </div>

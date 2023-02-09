@@ -10,6 +10,6 @@ export function Logout() {
   return (
     <a href="#" onClick={handleClick}>
     Logout
-  </a>
+    </a>
   );
 }

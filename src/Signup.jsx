@@ -10,7 +10,7 @@ export function Signup() {
       console.log(response.data);
       console.log("user created");
       event.target.reset();
-  });
+    });
   };
  
   return (
