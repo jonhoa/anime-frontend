@@ -12,7 +12,7 @@ export function Header() {
         </a>
         <Link to="/signup">Signup </Link>
         <Link to="/all">Animes </Link>
-        <Link to="/profile">Profile </Link>
+        <Link to="/profile/current">Profile </Link>
       </nav>
     </div>
   );

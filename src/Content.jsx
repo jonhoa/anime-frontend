@@ -9,6 +9,7 @@ import axios from 'axios';
 import { Signup } from './Signup';
 import { Home } from './Home';
 import { Profile } from './Profile';
+import { useParams } from 'react-router-dom';
 
 export function Content() {
   const [items, setItems] = useState([]);
