@@ -24,8 +24,8 @@ a:hover {
 }
 
 body {
-  /* margin: 0;
-  display: flex; */
+  margin: 0;
+  /* display: flex;  */
   /* linear-gradient(#1e1e2f, #1e1e24); */
   /* place-items: center; */
   /* background: linear-gradient(#282877, #1e1e24); */
@@ -89,7 +89,7 @@ a {
   background-color: rgba(242, 222, 222, 0.327);
 }
 /* .card {
-  /* background: linear-gradient(#4915b0, #2b1641); */
+  /* background: linear-gradient(#4915b0, #2b1641); 
 } */
 
 p {
