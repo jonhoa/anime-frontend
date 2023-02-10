@@ -25,9 +25,6 @@ export function AnimeShow() {
       // dynamically add anime.id and current_user.id into submit request
     });
   };
-
-  
-
   useEffect(handleShow, []);
   
   return (
