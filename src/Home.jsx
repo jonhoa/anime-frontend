@@ -70,7 +70,7 @@ export function Home(props) {
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Bleach</h5><hr/>
+                <h5 class="card-title"><a href="">Bleach</a></h5><hr/>
               </div>
             </div>
           </div>

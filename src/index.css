@@ -28,9 +28,9 @@ body {
   display: flex; */
   /* linear-gradient(#1e1e2f, #1e1e24); */
   /* place-items: center; */
-  background: linear-gradient(#282877, #1e1e24);
-  min-width: 320px;
-  min-height: 100vh;
+  /* background: linear-gradient(#282877, #1e1e24); */
+  /* min-width: 320px;
+  min-height: 100vh; */
 }
 
 h1 {
@@ -69,9 +69,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-#products-index img {
+/* #products-index img {
   width: 300px;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -88,6 +88,9 @@ a {
 .div-login {
   background-color: rgba(242, 222, 222, 0.327);
 }
+/* .card {
+  /* background: linear-gradient(#4915b0, #2b1641); */
+} */
 
 p {
   color: #998d8d;

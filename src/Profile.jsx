@@ -40,7 +40,7 @@ export function Profile() {
       <h5>Favorites</h5>
       {fav.map(favorite => (
         <div key={favorite.id}>
-          <p><img src={favorite.item.image_url} class="img-thumbnail" height="150"/></p>
+          <p><img src={favorite.item.image_url} class="img-thumbnail" height="70"/></p>
           <p>{favorite.item.name}</p>
         </div>
       ))}
