@@ -40,6 +40,8 @@ export function AnimeShow() {
         {!anime.favorited && 
         <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
         }
+        <h2>Characters</h2>
+        <hr/>
         <h2>Reviews</h2> <hr/>
         {/* add other user reviews here */}
         <p>Anonymous: 'Very good'</p>

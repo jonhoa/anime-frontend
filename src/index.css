@@ -95,3 +95,39 @@ a {
 p {
   color: #998d8d;
 }
+
+.img-thumbnail {
+  border: 0;
+  margin: 0 auto;
+  box-shadow: 0 0 0 rgb(0 0 0 / 15%);
+  display: block;
+  object-fit: cover;
+    transition: .4s;
+    width: 100%;
+    overflow: clip;
+  }
+
+.img-thumbnail:hover {
+  border: 0;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  transform: scale(1.05);
+  }
+small.text-muted {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.carousel-inner {
+    position: relative;
+                height: 40%;
+                object-fit: contain;
+                overflow: hidden;
+}
+h5.card-title {
+  font-size: 12px;
+  /* font-family: Fira Sans,sans-serif; */
+}

@@ -11,16 +11,28 @@ export function Header() {
   }
   return (
     <div>
-      <nav class="navbar navbar-light bg-dark">
-        <a class="navbar-brand"> <Link to="/home" class="nav-link">Home </Link></a>
-        <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <Link to="/login">Login </Link>
-        </a>
-        <Logout/>
-        <Link to="/signup">Signup </Link>
-        <Link to="/all">Animes </Link>
-        <Link to="/profile/current">Profile </Link>
-      </nav>
+      <header>
+        <nav class="navbar navbar-light bg-dark">
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Link to="/home" class="nav-link">Home </Link>
+          </a>
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Link to="/login">Login </Link>
+          </a>
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Logout/>
+          </a>
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Link to="/signup">Signup </Link>
+          </a>
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Link to="/all">Animes </Link>
+          </a>
+          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <Link to="/profile/current">Profile </Link>
+          </a>
+        </nav>
+      </header>
     </div>
   );
 }
