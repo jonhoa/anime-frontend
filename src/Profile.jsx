@@ -24,17 +24,17 @@ export function Profile() {
     });
   };
 
-  const handleDeleteFavorite = () => {
-    {fav.map(favorite => (
-      console.log("Trying to delete " + favorite.item.name)
-    ));} 
+  const handleDeleteFavorite = (favorite) => {
+    console.log("Trying to delete " + favorite.item.name);
+    console.log("Trying to delete favorite id of " + favorite.id);
+      
+    // Finish working on the axios delete button
+    axios.delete(`http://localhost:3000/favorites/${favorite.id}`).then(response => {
+      console.log("deleting");
+      console.log(response.data);
+    });
+  }; 
 
-  // Finish working on the axios delete button
-    // axios.delete(`http://localhost:3000/favorites/${anime.id}`).then(response => {
-    //   console.log("deleting");
-    //   console.log(response.data);
-    // })
-  };
   useEffect(handleProfile, []);
   useEffect(handleFav, []);
 
@@ -53,7 +53,7 @@ export function Profile() {
         <div key={favorite.id}>
           <p><img src={favorite.item.image_url} class="img-thumbnail" height="70"/></p>
           <p>{favorite.item.name}</p>
-          <button type ="Submit" class ="btn btn-danger" onClick={handleDeleteFavorite}>Delete</button>
+          <button type ="Submit" class ="btn btn-danger" onClick={() => handleDeleteFavorite(favorite)}>Delete</button>
         </div>
       ))}
       <hr/>
