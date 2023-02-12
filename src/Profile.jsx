@@ -32,6 +32,7 @@ export function Profile() {
     axios.delete(`http://localhost:3000/favorites/${favorite.id}`).then(response => {
       console.log("deleting");
       console.log(response.data);
+      window.location.href = "";
     });
   }; 
 

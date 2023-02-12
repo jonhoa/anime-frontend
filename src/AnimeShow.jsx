@@ -22,6 +22,7 @@ export function AnimeShow() {
     const newParams = {item_id: anime.id};
     axios.post("http://localhost:3000/favorites/add",newParams).then(response => {
       console.log(response.data);
+      window.location.href = "";
       // dynamically add anime.id and current_user.id into submit request
     });
   };
