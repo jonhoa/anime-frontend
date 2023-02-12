@@ -30,7 +30,7 @@ export function Header() {
             <Link to="/all">Animes </Link>
           </a>
           <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/profile/current">Profile </Link>
+            <Link to="/profile/current"><img src="https://www.seekpng.com/png/detail/145-1457681_question-mark-png-question-mark-hover-icon.png" class="rounded-circle" width ="30" height="30"/> Profile </Link>
           </a>
         </nav>
       </header>

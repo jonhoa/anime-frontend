@@ -28,7 +28,7 @@ body {
   /* display: flex;  */
   /* linear-gradient(#1e1e2f, #1e1e24); */
   /* place-items: center; */
-  /* background: linear-gradient(#282877, #1e1e24); */
+  background: linear-gradient(#282877, #1e1e24);
   /* min-width: 320px;
   min-height: 100vh; */
 }
@@ -88,9 +88,11 @@ a {
 .div-login {
   background-color: rgba(242, 222, 222, 0.327);
 }
-/* .card {
-  /* background: linear-gradient(#4915b0, #2b1641); 
-} */
+.card {
+   background: linear-gradient(#7c36c2a7,#0e0e0e); 
+   /* background: #0e0e0e; */
+   color: #aaa;
+}
 
 p {
   color: #998d8d;
