@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
+import logo from './img/logo1.png';
 import axios from "axios";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +15,7 @@ export function Header() {
       <header>
         <nav class="navbar navbar-light bg-dark">
           <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/home" class="nav-link">Home </Link>
+            <Link to="/home" class="nav-link"><img src={logo} width="150em" height ="40em"/> </Link>
           </a>
           <a class="navbar-nav mr-auto mt-2 mt-lg-0">
             <Link to="/login">Login </Link>
