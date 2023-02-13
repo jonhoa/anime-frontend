@@ -44,22 +44,27 @@ export function Profile() {
   return (
     <div class ="container">
       <div class= "container-profile">
-      <h1>Welcome {user["name"]} to Your Profile Tab</h1>
-      <img src ={user["pic"]}/>
-      <p>Display your favorite titles</p>
-      <p>Add favorites</p>
-      <p>Remove favorites here</p>
-      <hr/>
-      <h5>Favorites</h5>
-      {fav.map(favorite => (
-        <div key={favorite.id}>
-          <p><img src={favorite.item.image_url} class="img-favorites"/></p>
-          <p>{favorite.item.name}</p>
-          <button type ="Submit" class ="btn btn-danger" onClick={() => handleDeleteFavorite(favorite)}>Delete</button>
+        <h1>Welcome {user["name"]} to Your Profile Tab</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-2">
+          <div class="profile-logo">
+            <div class="profile-block">
+            <div class="user-image">
+            <img src ={user["pic"]}/>
+            </div>
+            </div>
+          </div>
+          <div>
+            <p>Favorites</p>
+            {fav.map(favorite => (
+              <div key={favorite.id}>
+                <p><img src={favorite.item.image_url} class="img-favorites"/></p>
+                <p>{favorite.item.name}</p>
+                <button type ="Submit" class ="btn btn-danger" onClick={() => handleDeleteFavorite(favorite)}>Delete</button>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-      <hr/>
-    </div>
+      </div>
     </div>
   );
 }

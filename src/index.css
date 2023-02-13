@@ -54,11 +54,42 @@ body {
 .container-profile h1{
   text-align: center;
 }
+.profile-logo {
+  border-right: #e5e5e5 2px solid;
+  display: table-cell;
+    padding: 8px 8px 8px 0;
+    vertical-align: top;
+    width: 225px;
+}
 
+.profile-block {
+  display: block;
+  width: 224px;
+}
+
+.user-image {
+  display: block;
+  text-align: center;
+}
+
+.user-image img {
+  background-color: #c4c4c4;
+    border-radius: 2px;
+    color: #787878;
+    display: table-cell;
+    height: 225px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+   border: 1px solid black;
+   vertical-align: middle;
+   margin-left: 13px;
+}
 /* Header */
 .page-header {
   padding: 20px;
   box-sizing: border-box;
+  background-color: #212529;
 }
 
 .page-header nav {

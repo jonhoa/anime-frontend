@@ -10,6 +10,7 @@ export function Header() {
   if (jwt) {
     // change login to logout on return
   }
+  // Pass on user params to header component, changes pic from ? to user image
   return (
     <div>
       <header class ="page-header">
