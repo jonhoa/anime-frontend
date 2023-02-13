@@ -81,7 +81,7 @@ body {
     width: 200px;
     position: relative;
     text-align: center;
-   border: 1px solid black;
+   border: 1px transparent rgba(0, 0, 0, 0.423);
    vertical-align: middle;
    margin-left: 13px;
 }
