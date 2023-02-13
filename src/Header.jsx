@@ -12,7 +12,7 @@ export function Header() {
   }
   return (
     <div>
-      <header>
+      <header class ="page-header">
         <nav class="navbar navbar-light bg-dark">
           <a class="navbar-nav mr-auto mt-2 mt-lg-0">
             <Link to="/home" class="nav-link"><img src={logo} width="150em" height ="40em"/> </Link>

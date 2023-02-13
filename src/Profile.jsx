@@ -42,7 +42,7 @@ export function Profile() {
 
 
   return (
-    <div>
+    <div class ="container">
       <h1>Welcome {user["name"]} to Your Profile Tab</h1>
       <img src ={user["pic"]}/>
       <p>Display your favorite titles</p>

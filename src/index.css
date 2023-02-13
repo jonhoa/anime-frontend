@@ -133,3 +133,8 @@ h5.card-title {
   font-size: 12px;
   /* font-family: Fira Sans,sans-serif; */
 }
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
