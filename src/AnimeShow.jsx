@@ -36,6 +36,7 @@ export function AnimeShow() {
         </div>
         <div class="col-sm-8">
           <h1>{anime.name}</h1>
+          {/* genre buttons go here */}
           <p>{anime.description}</p>
           {/* if logged in and jwt is available, show add favorite button */}
           {!anime.favorited && 
@@ -43,6 +44,14 @@ export function AnimeShow() {
           }
           <h2>Trailer</h2><hr/>
           <p>iframe thing goes here</p>
+          <iframe src='https://www.youtube.com/embed/qig4KOK2R2g'
+            frameborder='0'
+            allow='autoplay; encrypted-media'
+            width="60%"
+            height="auto"
+            allowfullscreen
+            title='video'
+          />
           <h2>Characters</h2>
           <hr/>
         </div>

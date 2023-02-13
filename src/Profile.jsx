@@ -50,7 +50,7 @@ export function Profile() {
             <div class="profile-block">
               <div class="user-image">
                 <img src ={user["pic"]}/>
-              <small>Created: {user["created"]}</small>
+                <small>Created: {user["created"]}</small>
               </div>
             </div>
           </div>

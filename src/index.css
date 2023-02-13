@@ -247,6 +247,13 @@ a {
    color: #aaa;
 }
 
+.card-home {
+   background: linear-gradient(#7c36c2a7,#0e0e0e); 
+   /* background: #0e0e0e; */
+   color: #aaa;
+   height: 1000px;
+}
+
 p {
   color: #998d8d;
 }
@@ -301,11 +308,11 @@ small.text-muted {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.carousel-inner {
+.carousel-inner{
     position: relative;
-                height: 40%;
-                object-fit: contain;
-                overflow: hidden;
+    height: 40%;
+    object-fit: contain;
+    overflow: hidden;
 }
 h5.card-title {
   font-size: 12px;
