@@ -48,9 +48,10 @@ export function Profile() {
         <div class="row row-cols-1 row-cols-md-2 g-2">
           <div class="profile-logo">
             <div class="profile-block">
-            <div class="user-image">
-            <img src ={user["pic"]}/>
-            </div>
+              <div class="user-image">
+                <img src ={user["pic"]}/>
+              <small>Created: {user["created"]}</small>
+              </div>
             </div>
           </div>
           <div>

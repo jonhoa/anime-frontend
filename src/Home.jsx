@@ -6,6 +6,18 @@ import { AnimeShow } from "./AnimeShow";
 import { Link } from "react-router-dom";
 
 export function Home(props) { 
+  const [start,setStart] = useState(0);
+  const [end,setEnd] = useState(9);
+  const handleNext = () => {
+    console.log("next page");
+    setStart(start + 10);
+    setEnd(end + 10);
+  };
+  const handlePrevious = () => {
+    console.log("Previous page");
+    setStart(start - 10);
+    setEnd(end - 10);
+  };
   // what happens if i have 200 records? will it create 200 carousel images? if so how can i limit it to only 3!
   return (
     <div  class ="container">
@@ -16,7 +28,7 @@ export function Home(props) {
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          {props.items.map(title => (
+          {props.items.slice(0, 3).map(title => (
             <div class="carousel-item active" data-bs-interval="10000">
               <Link to={'/anime/' + title.id}>
                 <img src={title.image_url} class="d-block w-100" alt="..." height ="400"/>
@@ -86,7 +98,7 @@ export function Home(props) {
 
         
           {/* card */}
-          {props.items.map(title => (
+          {props.items.slice(start, end).map(title => (
             <div class="col h-100">
               <div>
                 <Link to={'/anime/' + title.id}>
@@ -100,6 +112,10 @@ export function Home(props) {
           ))}
         </div>
       </div>
+        <div class ="button-footer">
+          <button class = "button-7" onClick={handlePrevious}>Previous</button>
+          <button class = "button-7" onClick={handleNext}>Next</button>
+        </div>
     </div>
-  );
+          );
 }
