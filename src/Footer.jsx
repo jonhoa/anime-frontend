@@ -8,8 +8,12 @@ export function Footer() {
         ©Copyright 2023. All rights reserved.
         </small>
         <ul>
-          <a href = "https://www.linkedin.com/in/jonhoarau/"><img src ={linkedinlogo} width = "30" height ="30"/></a><br/>
-          <a href="https://github.com/jonhoa"><img src ={gitlogo} width = "30" height ="30"/></a>
+          <li>
+            <a href = "https://www.linkedin.com/in/jonhoarau/"><img src ={linkedinlogo} width = "30" height ="30"/></a>
+          </li>
+          <li>
+            <a href="https://github.com/jonhoa"><img src ={gitlogo} width = "30" height ="30"/></a>
+          </li>
         </ul>
       </footer>
     </div>

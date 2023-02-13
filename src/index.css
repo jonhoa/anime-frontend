@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+
 /* /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,6 +16,8 @@
   -webkit-text-size-adjust: 100%;
 } */
 
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,6 +29,7 @@ a:hover {
 
 body {
   margin: 0;
+  font: 16px/1.5 "Dosis", sans-serif;
   /* display: flex;  */
   /* linear-gradient(#1e1e2f, #1e1e24); */
   /* place-items: center; */
@@ -33,10 +38,57 @@ body {
   min-height: 100vh; */
 }
 
-.container{
+.container {
   min-width: 320px;
   min-height: 100vh;
 }
+
+/* Header */
+.page-header {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page-header nav {
+  background-color: #212529;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-header ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.logo-main {
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -84,6 +136,7 @@ html {
 
 a {
   color: white;
+  text-decoration: none;
 }
 .nav-link {
   color: white;
@@ -101,6 +154,13 @@ a {
 
 p {
   color: #998d8d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .img-thumbnail {
@@ -139,15 +199,31 @@ h5.card-title {
   /* font-family: Fira Sans,sans-serif; */
 }
 
+/* footer */
 .page-footer {
   display: flex;
   flex-direction: column-reverse;
+  padding: 20px;
+  background-color: rgb(244, 235, 255);
 }
 
 .page-footer ul {
   display: flex;
   font-size: 1.5rem;
   margin-bottom: 5px;
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-footer li {
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 550px) {
@@ -158,11 +234,17 @@ h5.card-title {
   }
   .page-footer ul {
     margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 }
 
 .footer-small{
-  color:white;
+  color:rgb(30, 22, 22);
   justify-content: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

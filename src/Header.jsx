@@ -13,27 +13,30 @@ export function Header() {
   return (
     <div>
       <header class ="page-header">
-        <nav class="navbar navbar-light bg-dark">
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/home" class="nav-link"><img src={logo} width="150em" height ="40em"/> </Link>
-          </a>
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/login">Login </Link>
-          </a>
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Logout/>
-          </a>
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/signup">Signup </Link>
-          </a>
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/all">Animes </Link>
-          </a>
-          <a class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <Link to="/profile/current"><img src="https://www.seekpng.com/png/detail/145-1457681_question-mark-png-question-mark-hover-icon.png" class="rounded-circle" width ="30" height="30"/> Profile </Link>
-          </a>
+        <nav>
+          <h2 class="logo-main">
+            <a><Link to="/home" class="nav-link"><img src={logo} width="150em" height ="40em"/> </Link></a></h2>
+          <ul>
+            <li>
+              <a><Link to="/login">Login </Link></a>
+            </li>
+            <li>
+              <a><Logout/></a>
+            </li>
+            <li>
+              <a><Link to="/signup">Signup </Link></a>
+            </li>
+            <li>
+              <a><Link to="/all">Animes </Link></a>
+            </li>
+            <li>
+              <a><Link to="/profile/current"><img src="https://www.seekpng.com/png/detail/145-1457681_question-mark-png-question-mark-hover-icon.png" class="rounded-circle" width ="30" height="30"/> Profile </Link></a>
+            </li>
+          </ul>
         </nav>
       </header>
     </div>
   );
 }
+
+{/* <a class="navbar-nav mr-auto mt-2 mt-lg-0"></a> */}

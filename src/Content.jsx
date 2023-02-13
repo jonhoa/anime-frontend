@@ -34,7 +34,6 @@ export function Content() {
         <Route path="/anime/:id" element={<AnimeShow />} />
         <Route path="/profile/current" element={<Profile />} />
       </Routes>
-      <br/>
     </div>
   );
 }

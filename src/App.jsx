@@ -13,13 +13,11 @@ import { ProductsIndex } from './ProductsIndex';
 function App() {
   
   return (
-    <div>
-      <BrowserRouter>
-        <Header />
-        <Content />
-        <Footer/>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Content />
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
