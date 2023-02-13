@@ -43,6 +43,18 @@ body {
   min-height: 100vh;
 }
 
+.container-body {
+  min-height: 100vh;
+}
+
+.container-profile {
+  min-height: 100vh;
+  background-color: white;
+}
+.container-profile h1{
+  text-align: center;
+}
+
 /* Header */
 .page-header {
   padding: 20px;
@@ -163,15 +175,33 @@ ul {
   box-sizing: border-box;
 }
 
+#thumbnail-show {
+  display: flex;
+  border-radius: 25px;
+  border: 2px solid;
+  width: auto;
+  max-width: 100%;
+  height: 500px;
+}
+.col-sm-8  {
+  background-color: white;
+}
+
+.img-favorites {
+  width: auto;
+  max-width: 50%;
+  justify-content: center;
+}
+
 .img-thumbnail {
   border: 0;
   margin: 0 auto;
   box-shadow: 0 0 0 rgb(0 0 0 / 15%);
   display: block;
   object-fit: cover;
-    transition: .4s;
-    width: 100%;
-    overflow: clip;
+  transition: .4s;
+  width: 100%;
+  overflow: clip;
   }
 
 .img-thumbnail:hover {

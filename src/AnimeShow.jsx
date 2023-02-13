@@ -29,22 +29,31 @@ export function AnimeShow() {
   useEffect(handleShow, []);
   
   return (
-    <div class="row">
-      <div class="col-sm-4">
-        <img src={anime.image_url} alt="..." width="300" height="300" class="img-thumbnail pull-left"/>
-      </div>
-      <div class="col-sm-8">
-        <h1>{anime.name}</h1>
-        <p>{anime.description}</p>
-        {/* if logged in and jwt is available, show add favorite button */}
-        {!anime.favorited && 
+    <div class= "container-body">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src={anime.image_url} alt="..." id ="thumbnail-show"/>
+        </div>
+        <div class="col-sm-8">
+          <h1>{anime.name}</h1>
+          <p>{anime.description}</p>
+          {/* if logged in and jwt is available, show add favorite button */}
+          {!anime.favorited && 
         <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
-        }
-        <h2>Characters</h2>
-        <hr/>
-        <h2>Reviews</h2> <hr/>
-        {/* add other user reviews here */}
-        <p>Anonymous: 'Very good'</p>
+          }
+          <h2>Trailer</h2><hr/>
+          <p>iframe thing goes here</p>
+          <h2>Characters</h2>
+          <hr/>
+        </div>
+      </div>
+      <div class= "row">
+        <div class="col-sm-4"><br/></div>
+        <div class="col-sm-8">
+          <h2>Reviews</h2> <hr/>
+          {/* add other user reviews here */}
+          <p>Anonymous: 'Very good'</p>
+        </div>
       </div>
     </div>
   );

@@ -43,6 +43,7 @@ export function Profile() {
 
   return (
     <div class ="container">
+      <div class= "container-profile">
       <h1>Welcome {user["name"]} to Your Profile Tab</h1>
       <img src ={user["pic"]}/>
       <p>Display your favorite titles</p>
@@ -52,12 +53,13 @@ export function Profile() {
       <h5>Favorites</h5>
       {fav.map(favorite => (
         <div key={favorite.id}>
-          <p><img src={favorite.item.image_url} class="img-thumbnail" height="70"/></p>
+          <p><img src={favorite.item.image_url} class="img-favorites"/></p>
           <p>{favorite.item.name}</p>
           <button type ="Submit" class ="btn btn-danger" onClick={() => handleDeleteFavorite(favorite)}>Delete</button>
         </div>
       ))}
       <hr/>
+    </div>
     </div>
   );
 }
