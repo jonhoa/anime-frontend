@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export function Home(props) { 
   // what happens if i have 200 records? will it create 200 carousel images? if so how can i limit it to only 3!
   return (
-    <div  class ="container-fluid">
+    <div  class ="container">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

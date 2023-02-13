@@ -33,6 +33,11 @@ body {
   min-height: 100vh; */
 }
 
+.container{
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -134,7 +139,30 @@ h5.card-title {
   /* font-family: Fira Sans,sans-serif; */
 }
 
-footer {
+.page-footer {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 550px) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+.footer-small{
+  color:white;
+  justify-content: center;
+  text-align: center;
 }

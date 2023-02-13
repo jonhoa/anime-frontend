@@ -14,7 +14,7 @@ export function Signup() {
   };
  
   return (
-    <div>
+    <div class="container">
       <h1> Sign Up</h1>
       <form onSubmit ={handleSignup}>
         Name:<input type ="text" name ="name"></input><br/>
