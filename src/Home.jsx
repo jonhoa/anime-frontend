@@ -18,10 +18,11 @@ export function Home(props) {
     setStart(start - 10);
     setEnd(end - 10);
   };
-  // what happens if i have 200 records? will it create 200 carousel images? if so how can i limit it to only 3!
+
   return (
 
     <div class ="container">
+      {/* Carousel */}
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,8 +55,9 @@ export function Home(props) {
  
       <div class="main-body">
         <div class ="row">
+          {/* side bar */}
           <div class="col-sm-2">
-            <div class="card">
+            <div class="card-home">
               <div class="card-header">Popular</div>
               <div class="row g-0">
                 <div class="col-md-4">
@@ -89,6 +91,11 @@ export function Home(props) {
                   </div>
                 </div>
               </div> 
+            </div>
+            <div class="card">
+              <h2>Search</h2>
+              <input type="search"></input>
+              <button type="submit">Q</button>
             </div>
           </div>
           <div class="col-sm-10">

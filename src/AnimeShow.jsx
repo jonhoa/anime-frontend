@@ -44,7 +44,7 @@ export function AnimeShow() {
           }
           <h2>Trailer</h2><hr/>
           <p>iframe thing goes here</p>
-          <iframe src='https://www.youtube.com/embed/qig4KOK2R2g'
+          <iframe src='https://www.youtube.com/embed/qig4KOK2R2g?autoplay=0&origin=http://example.com&controls=0&rel=1'
             frameborder='0'
             allow='autoplay; encrypted-media'
             width="60%"
