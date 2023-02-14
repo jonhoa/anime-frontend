@@ -10,6 +10,7 @@ export function ProductsIndex() {
   const [start,setStart] = useState(0);
   const [next, setNext] = useState("");
   const [prev, setPrev] = useState("");
+  const [offset, setOffset] = useState(0);
   const API_BASE = 'https://kitsu.io/api/edge';
   
   const handleNext = () => {
@@ -40,9 +41,10 @@ export function ProductsIndex() {
     );
   };
   
+  
   const handleKitsu = () => {
-    axios.get(`https://kitsu.io/api/edge/anime`).then(response =>{
-      console.log(response.data.links);
+    axios.get(`https://kitsu.io/api/edge/anime?page%5Blimit%5D=20&page%5Boffset%5D=0`).then(response =>{
+      console.log(response.data);
       setNext(response.data.links.next);
       setPrev(response.data.links.prev);
       setKitsu(response.data.data);
