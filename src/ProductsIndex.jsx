@@ -14,12 +14,10 @@ export function ProductsIndex() {
   
   const handleNext = () => {
     console.log("next page");
-    setPage(page + 20);
-    setStart(start + 20);
-    console.log(page);
       axios.get(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=${page}`).then(response =>{
         console.log(response.data.data);
         setKitsu(response.data.data);
+        setPage(response.data.links.next);
         console.log(page);
       }
       );
@@ -35,8 +33,9 @@ export function ProductsIndex() {
   };
   
   const handleKitsu = () => {
-    axios.get(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=${page}`).then(response =>{
-      console.log(response.data.data);
+    axios.get(`https://kitsu.io/api/edge/anime`).then(response =>{
+      console.log(response.data.links.next);
+      setPage(response.data.links.next);
       setKitsu(response.data.data);
     }
     );
