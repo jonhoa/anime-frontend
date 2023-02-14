@@ -8,34 +8,43 @@ export function ProductsIndex() {
   // Kitsu API TEST
   const [kitsu, setKitsu] = useState([]);
   const [start,setStart] = useState(0);
-  const [end,setEnd] = useState(20);
-  const [page,setPage] = useState(0);
+  const [next, setNext] = useState("");
+  const [prev, setPrev] = useState("");
   const API_BASE = 'https://kitsu.io/api/edge';
   
   const handleNext = () => {
     console.log("next page");
-      axios.get(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=${page}`).then(response =>{
-        console.log(response.data.data);
-        setKitsu(response.data.data);
-        setPage(response.data.links.next);
-        console.log(page);
-      }
-      );
+    console.log(next);
+    axios.get(next).then(response =>{
+      console.log(response.data);
+      setKitsu(response.data.data);
+      setNext(response.data.links.next);
+      setPrev(response.data.links.prev);
+      console.log(next);
     }
+    );
+  }
 
 
   const handlePrevious = () => {
     console.log("Previous page");
-    console.log(page);
-    setPage(page - 20);
-    setEnd(end - 20);
-    handleKitsu;
+    // setPage(page - 20);
+    console.log(prev);
+    axios.get(prev).then(response =>{
+      console.log(response.data);
+      setKitsu(response.data.data);
+      setPrev(response.data.links.prev);
+      setNext(response.data.links.next);
+      // console.log(end);
+    }
+    );
   };
   
   const handleKitsu = () => {
     axios.get(`https://kitsu.io/api/edge/anime`).then(response =>{
-      console.log(response.data.links.next);
-      setPage(response.data.links.next);
+      console.log(response.data.links);
+      setNext(response.data.links.next);
+      setPrev(response.data.links.prev);
       setKitsu(response.data.data);
     }
     );
@@ -95,7 +104,7 @@ export function ProductsIndex() {
             <div class="row row-cols-1 row-cols-md-4 g-4">
         
               {/* card */}
-              {kitsu.slice(start, end).map(title => (
+              {kitsu.map(title => (
                 <div class="col h-100">
                   <div>
                     <Link to={'/anime/' + title.id}>
