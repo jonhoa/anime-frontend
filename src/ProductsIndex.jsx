@@ -52,7 +52,6 @@ export function ProductsIndex() {
     );
   };
   useEffect(handleKitsu, []);
-  
 
   return (
     <div class ="container">
@@ -109,7 +108,7 @@ export function ProductsIndex() {
               {kitsu.map(title => (
                 <div class="col h-100">
                   <div>
-                    <Link to={'/anime/' + title.id}>
+                    <Link to={'https://kitsu.io/anime/' + title.id}>
                     <img src={title.attributes.posterImage.medium} class="img-thumbnail" alt="..."/>
                     </Link>
                     <div class="card-footer">
