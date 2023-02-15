@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export function Home(props) { 
   const [start,setStart] = useState(0);
-  const [end,setEnd] = useState(11);
+  const [end,setEnd] = useState(12);
   const handleNext = () => {
     console.log("next page");
     setStart(start + 10);
@@ -197,7 +197,7 @@ export function Home(props) {
               {/* card */}
               {props.items.slice(start, end).map(title => (
                 <div class="col h-100">
-                  <div>
+                  <div class="home-fluid">
                     <Link to={'/anime/' + title.id}>
                       <img src={title.image_url} class="img-thumbnail" width="426" height="601.77" alt="..."/>
                     </Link>

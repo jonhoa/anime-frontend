@@ -330,6 +330,16 @@ ul {
   height: 50px;
 }
 
+.home-fluid .img-thumbnail {
+  border: 0;
+  margin: 0 auto;
+  box-shadow: 0 0 0 rgb(0 0 0 / 15%);
+  display: block;
+  object-fit: cover;
+  width: 601.77px;
+  height: 426px;
+  overflow: clip;
+  }
 .img-thumbnail {
   border: 0;
   margin: 0 auto;
