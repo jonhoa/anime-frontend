@@ -299,6 +299,23 @@ ul {
   box-sizing: border-box;
 }
 
+.carousel-text h5{
+  color: white;
+  box-shadow: #1e1e24;
+  text-shadow: 2px 2px 4px #47186c;
+  font-size: 30px;
+  font-family: bold;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.carousel-text p{
+  color: rgb(255, 246, 246);
+  box-shadow: #070709;
+  text-shadow: 5px 8px 4px #290330;
+  font-size: 20px;
+  font-family: bold;
+}
+
 #thumbnail-show {
   display: flex;
   /* border-radius: 25px; */
@@ -329,7 +346,11 @@ ul {
   width: 100%;
   height: 50px;
 }
-
+.carousel-pic img {
+  object-fit: cover;
+  display: block;
+  
+}
 .home-fluid .img-thumbnail {
   border: 0;
   margin: 0 auto;

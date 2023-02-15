@@ -22,6 +22,7 @@ export function Home(props) {
   return (
 
     <div class ="container">
+      {/* <div class="card-header">Home</div> */}
       {/* Carousel */}
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -31,13 +32,17 @@ export function Home(props) {
         </div>
         <div class="carousel-inner">
           {props.items.slice(0, 3).map(title => (
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="7000">
+              <div class ="carousel-pic">
               <Link to={'/anime/' + title.id}>
                 <img src={title.image_url} class="d-block w-100" alt="..." height ="400"/>
               </Link>
+              </div>
               <div class="carousel-caption d-none d-md-block">
-                <h5>{title.name}</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <div class ="carousel-text">
+                <h5 class>{title.name}</h5>
+                <p>{title.description.slice(0, 90)}...</p>
+              </div>
               </div>
             </div>
           ))};
@@ -54,6 +59,7 @@ export function Home(props) {
   
  
       <div class="main-body">
+      <div class="card-header">Home</div>
         <div class ="row">
           {/* side bar */}
           <div class="col-sm-2">

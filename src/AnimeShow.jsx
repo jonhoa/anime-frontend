@@ -38,7 +38,7 @@ export function AnimeShow() {
           <div class="col-sm-8">
 
             {/* Search */}
-              <div class="card-header">{anime.name}</div>
+            <br/>
         
             <h1>{anime.name}</h1>
             {/* genre buttons go here */}
