@@ -43,17 +43,14 @@ export function AnimeShow() {
         <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
           }
           <h2>Trailer</h2><hr/>
-          <p>iframe thing goes here</p>
-          <iframe src='https://www.youtube.com/embed/qig4KOK2R2g?autoplay=0&origin=http://example.com&controls=0&rel=1'
+          <iframe src={'https://www.youtube.com/embed/' + anime.video}
             frameborder='0'
             allow='autoplay; encrypted-media'
-            width="60%"
-            height="auto"
+            width="100%"
+            height="70%"
             allowfullscreen
             title='video'
           />
-          <h2>Characters</h2>
-          <hr/>
         </div>
       </div>
       <div class= "row">

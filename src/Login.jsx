@@ -31,7 +31,7 @@ export function Login() {
   
   return (
     <div class="container">
-      <div class="card">
+      {/* <div class="card">
         <div class ="div-login">
           <h2>Login</h2>
           <ul>
@@ -46,6 +46,26 @@ export function Login() {
             <a href ="">Forgot Password?</a>
           </form>
         </div>
+      </div> */}
+
+      <div class="login-form">
+        <form onSubmit ={handleLogin} method="post">
+          <h2 class="text-center">Log in</h2>       
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email"  name="email" required="required"/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" name="password" required="required"/>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+          </div>
+          <div class="clearfix">
+            <label class="float-left form-check-label"><input type="checkbox"/> Remember me</label>
+            <a href="#" class="float-right">Forgot Password?</a>
+          </div>        
+        </form>
+        <p class="text-center"><a href="http://localhost:5173/signup">Create an Account</a></p>
       </div>
     </div>
   );
