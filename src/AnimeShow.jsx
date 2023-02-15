@@ -36,6 +36,10 @@ export function AnimeShow() {
             <img src={anime.image_url} alt="..." id ="thumbnail-show"/>
           </div>
           <div class="col-sm-8">
+
+            {/* Search */}
+              <div class="card-header">{anime.name}</div>
+        
             <h1>{anime.name}</h1>
             {/* genre buttons go here */}
             <p>{anime.description}</p>
@@ -45,7 +49,8 @@ export function AnimeShow() {
       <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
             }
             {anime.favorited &&
-            <button type="button" class="btn btn-lg btn-primary" disabled>Already Favorited</button>}
+            <button type="button" class="btn btn-lg btn-primary" disabled>Already Favorited</button>
+            }
             <br/><br/>
             <h2>Trailer</h2><hr/>
             <iframe src={'https://www.youtube.com/embed/' + anime.video}

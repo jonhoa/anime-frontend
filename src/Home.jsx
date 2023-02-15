@@ -59,44 +59,137 @@ export function Home(props) {
           <div class="col-sm-2">
             <div class="card-home">
               <div class="card-header">Popular</div>
+              {/* 0 */}
               <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://samdrewtakeson.com/wp-content/uploads/2022/11/Bleach-Thousand-Year-Blood-War-Episode-9-Release-Date-800x600.jpg" class="img-fluid rounded-start" alt="..."/>
+                <div class="col-md-6">
+                  <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" height ="20" class="img-fluid" alt="..."/>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="">Bleach</a></h5><hr/>
-                  </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/boku-no-hero-academia-6th-season" target="_blank">Hero Academia</a></h5>
                 </div>
               </div>
-          
+              {/* 1 */}
               <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Mob-Psycho-100-Season-3-1-scaled-e1634624616827.jpg" class="img-fluid rounded-start" alt="..."/>
+                <div class="col-md-6">
+                  <img src="https://samdrewtakeson.com/wp-content/uploads/2022/11/Bleach-Thousand-Year-Blood-War-Episode-9-Release-Date-800x600.jpg" class="img-fluid" alt="..."/>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Mob Psycho 100 III</h5><hr/>
-                  </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/bleach" target="_blank">Bleach</a></h5>
+                  <hr/>
                 </div>
               </div>
+              {/* 2 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Mob-Psycho-100-Season-3-1-scaled-e1634624616827.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/mob-psycho-100-iii" target="_blank">Mob Psycho 100 III</a></h5>
+                </div>
+              </div>
+              {/* 3 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2021/11/gantz.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/gantz" target="_blank">Gantz</a></h5><hr/>
+                </div>
+                
+              </div>
+              {/* 4 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://media.kitsu.io/anime/42765/poster_image/large-5ce19551c1a6cf995b378205b9149b5c.jpeg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/jujutsu-kaisen" target="_blank">Jujutsu Kaisen</a></h5>
+                </div>
+                <hr/>
+              </div>
+              {/* 5 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://media.kitsu.io/anime/poster_images/42867/large.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/dr-stone-two" target="_blank">Dr.Stone</a></h5>
+                </div>
+              </div>
+            </div>
+            <br/>
 
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2021/11/gantz.jpg" class="img-fluid rounded-start" alt="..."/>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Gantz</h5><hr/>
-                  </div>
-                </div>
-              </div> 
-            </div>
-            <div class="card">
-              <h2>Search</h2>
+            {/* Search */}
+            <div class="card-search">
+              <div class="card-header">Search</div>
               <input type="search"></input>
-              <button type="submit">Q</button>
+            </div><br/>
+
+            {/* Upcoming */}
+            <div class="card-home">
+              <div class="card-header">Upcoming</div>
+              {/* 0 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://cdn.myanimelist.net/images/anime/10/78745l.jpg" height ="20" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/boku-no-hero-academia-6th-season" target="_blank">Hero Academia</a></h5>
+                </div>
+              </div>
+              {/* 1 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://samdrewtakeson.com/wp-content/uploads/2022/11/Bleach-Thousand-Year-Blood-War-Episode-9-Release-Date-800x600.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/bleach" target="_blank">Bleach</a></h5>
+                  <hr/>
+                </div>
+              </div>
+              {/* 2 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Mob-Psycho-100-Season-3-1-scaled-e1634624616827.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/mob-psycho-100-iii" target="_blank">Mob Psycho 100 III</a></h5>
+                </div>
+              </div>
+              {/* 3 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2021/11/gantz.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/gantz" target="_blank">Gantz</a></h5><hr/>
+                </div>
+                
+              </div>
+              {/* 4 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://media.kitsu.io/anime/42765/poster_image/large-5ce19551c1a6cf995b378205b9149b5c.jpeg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/jujutsu-kaisen" target="_blank">Jujutsu Kaisen</a></h5>
+                </div>
+                <hr/>
+              </div>
+              {/* 5 */}
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://media.kitsu.io/anime/poster_images/42867/large.jpg" class="img-fluid" alt="..."/>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><a href="https://kitsu.io/anime/dr-stone-two" target="_blank">Dr.Stone</a></h5>
+                </div>
+              </div>
             </div>
+            <br/>
+
+
+
           </div>
           <div class="col-sm-10">
             <div class="row row-cols-1 row-cols-md-4 g-4">
