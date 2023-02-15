@@ -106,7 +106,7 @@ export function Home(props) {
                 <div class="col h-100">
                   <div>
                     <Link to={'/anime/' + title.id}>
-                      <img src={title.image_url} class="img-thumbnail" alt="..."/>
+                      <img src={title.image_url} class="img-thumbnail" width="426" height="601.77" alt="..."/>
                     </Link>
                     <div class="card-footer">
                       <small class="text-muted">{title.name}</small>

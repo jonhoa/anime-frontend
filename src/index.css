@@ -19,7 +19,9 @@
   min-width: 320px;
     min-height: 100vh;
 }
-
+.container-body .row {
+  min-height: 100vh;
+}
 
 a {
   font-weight: 500;
@@ -267,11 +269,11 @@ ul {
 
 #thumbnail-show {
   display: flex;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   border: 2px solid;
   width: auto;
   max-width: 100%;
-  height: 500px;
+  height: 720px;
 }
 .col-sm-8  {
   background-color: white;

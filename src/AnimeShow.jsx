@@ -29,38 +29,38 @@ export function AnimeShow() {
   useEffect(handleShow, []);
   
   return (
-    <div class= "container-body">
-      <div class="row">
-        <div class="col-sm-4">
-          <img src={anime.image_url} alt="..." id ="thumbnail-show"/>
-        </div>
-        <div class="col-sm-8">
-          <h1>{anime.name}</h1>
-          {/* genre buttons go here */}
-          <p>{anime.description}</p>
-          {/* if logged in and jwt is available, show add favorite button */}
-          {!anime.favorited && 
-        <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
-          }
-          <h2>Trailer</h2><hr/>
-          <iframe src={'https://www.youtube.com/embed/' + anime.video}
-            frameborder='0'
-            allow='autoplay; encrypted-media'
-            width="100%"
-            height="70%"
-            allowfullscreen
-            title='video'
-          />
-        </div>
-      </div>
-      <div class= "row">
-        <div class="col-sm-4"><br/></div>
-        <div class="col-sm-8">
-          <h2>Reviews</h2> <hr/>
-          {/* add other user reviews here */}
-          <p>Anonymous: 'Very good'</p>
+    <div class= "container">
+      <div class= "container-body">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src={anime.image_url} alt="..." id ="thumbnail-show"/>
+          </div>
+          <div class="col-sm-8">
+            <h1>{anime.name}</h1>
+            {/* genre buttons go here */}
+            <p>{anime.description}</p>
+            <br/>
+            {/* if logged in and jwt is available, show add favorite button */}
+            {!anime.favorited && 
+      <button type ="submit" class="btn btn-success" onClick={handleAddFavorite} name="item_id" >Add to Favorites</button>
+            }
+            {anime.favorited &&
+            <button type="button" class="btn btn-lg btn-primary" disabled>Already Favorited</button>}
+            <br/><br/>
+            <h2>Trailer</h2><hr/>
+            <iframe src={'https://www.youtube.com/embed/' + anime.video}
+              frameborder='0'
+              allow='autoplay; encrypted-media'
+              height="350px"
+              width ='470vw'
+              allowfullscreen
+              title='video'
+            />
+          </div>
         </div>
       </div>
     </div>
+ 
   );
 }
+  

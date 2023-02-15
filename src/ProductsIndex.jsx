@@ -24,7 +24,7 @@ export function ProductsIndex() {
       console.log(next);
     }
     );
-  }
+  };
 
 
   const handlePrevious = () => {
@@ -52,6 +52,12 @@ export function ProductsIndex() {
     );
   };
   useEffect(handleKitsu, []);
+
+  const handleSearch = () => {
+    axios.get(`https://kitsu.io/api/edge/anime?filter[text]=${text}`).then(response =>{
+      console.log(response.data);
+    });
+  };
 
   return (
     <div class ="container">
@@ -109,7 +115,7 @@ export function ProductsIndex() {
                 <div class="col h-100">
                   <div>
                     <Link to={'https://kitsu.io/anime/' + title.id}>
-                    <img src={title.attributes.posterImage.medium} class="img-thumbnail" alt="..."/>
+                      <img src={title.attributes.posterImage.medium} class="img-thumbnail" alt="..."/>
                     </Link>
                     <div class="card-footer">
                       <small class="text-muted">{title.attributes.canonicalTitle}</small>
@@ -118,10 +124,10 @@ export function ProductsIndex() {
                 </div>
               ))}
             </div>
-        <div class ="button-footer">
-            <button class = "button-7" onClick={() => handlePrevious()}>Previous</button>
-            <button class = "button-7" onClick={() => handleNext()}>Next</button>
-          </div>
+            <div class ="button-footer">
+              <button class = "button-7" onClick={() => handlePrevious()}>Previous</button>
+              <button class = "button-7" onClick={() => handleNext()}>Next</button>
+            </div>
           </div>
         </div>
       </div>

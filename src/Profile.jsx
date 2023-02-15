@@ -14,6 +14,7 @@ export function Profile() {
     axios.get(`http://localhost:3000/user/${params.id}`).then(response =>{
       console.log(response.data);
       setUsers(response.data);
+     
     }
     );
   };
@@ -35,7 +36,7 @@ export function Profile() {
       window.location.href = "";
     });
   }; 
-
+  console.log(user["pic"]);
   useEffect(handleProfile, []);
   useEffect(handleFav, []);
 
@@ -47,7 +48,7 @@ export function Profile() {
         <h1>Welcome {user["name"]} to Your Profile Tab</h1>
         <div class="row row-cols-1 row-cols-md-2 g-2">
           <div class="profile-logo">
-            <div class="profile-block">
+            `<div class="profile-block">`
               <div class="user-image">
                 <img src ={user["pic"]}/>
                 <small>Created: {user["created"]}</small>

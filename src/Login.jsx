@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { redirect } from "react-router-dom";
+import { useEffect } from "react";
 
 const jwt = localStorage.getItem("jwt");
 if (jwt) {
@@ -9,6 +10,7 @@ if (jwt) {
 
 export function Login() { 
   const [errors, setErrors] = useState([]);
+  // const [spic, setSpic] = useState([]);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -17,17 +19,22 @@ export function Login() {
     const params = new FormData(event.target);
     axios.post("http://localhost:3000/login", params).then(response =>{
       console.log(response.data);
+      console.log(response.data.image_url);
       axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
       localStorage.setItem("jwt", response.data.jwt);
+      // setSpic(response.data.image_url);
       event.target.reset();
       window.location.href = "/home";
       console.log("logged in");
+      // <Header spic={spic}/>;
     })
       .catch((error) => {
         console.log(error.response);
         setErrors(["Invalid email or password"]);
       });
-  };
+    };
+    // console.log(spic);
+    // useEffect(handleLogin, []);
   
   return (
     <div class="container">

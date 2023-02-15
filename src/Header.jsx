@@ -5,11 +5,12 @@ import logo from './img/logo1.png';
 import axios from "axios";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-export function Header() { 
+export function Header(props) { 
   const jwt = localStorage.getItem("jwt");
   if (jwt) {
     // change login to logout on return
   }
+  console.log(props.spic);
   // Pass on user params to header component, changes pic from ? to user image
   return (
     <div>
