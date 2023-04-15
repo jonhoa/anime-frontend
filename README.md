@@ -5,6 +5,7 @@ AnimeWatch is a fullstack app created in Ruby on Rails, and ReactJs. The app uti
 
 
 ## Screenshots
+![home1](https://user-images.githubusercontent.com/25704348/232182651-d5bddb10-d4ab-44fa-9f5e-330d12a2545f.PNG)
 
 ![Capture](https://user-images.githubusercontent.com/25704348/228395042-abe8eb22-be35-4073-8456-28fe074e936d.PNG)
 
