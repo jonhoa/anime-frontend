@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AnimeShow } from "./AnimeShow";
 import { Link } from "react-router-dom";
+import { handleProductsIndex } from "./handleProductsIndex";
+import { useAxios } from "./useAxios";
+import { fetchHome } from "./fetchHome";
 
 export function Home(props) { 
   const [start,setStart] = useState(0);
@@ -19,6 +22,8 @@ export function Home(props) {
     setEnd(end - 10);
   };
 
+  const homeData = fetchHome();
+  
   return (
 
     <div class ="container">
@@ -31,7 +36,7 @@ export function Home(props) {
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          {props.items.slice(0, 3).map(title => (
+          {homeData.slice(0, 3).map(title => (
             <div class="carousel-item active" data-bs-interval="7000">
               <div class ="carousel-pic">
               <Link to={'/anime/' + title.id}>
@@ -201,7 +206,7 @@ export function Home(props) {
             <div class="row row-cols-1 row-cols-md-4 g-4">
         
               {/* card */}
-              {props.items.slice(start, end).map(title => (
+              {homeData.slice(start, end).map(title => (
                 <div class="col h-100">
                   <div class="home-fluid">
                     <Link to={'/anime/' + title.id}>

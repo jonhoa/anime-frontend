@@ -10,7 +10,7 @@ export function Header(props) {
   if (jwt) {
     // change login to logout on return
   }
-  console.log(props.spic);
+  console.log('header');
   // Pass on user params to header component, changes pic from ? to user image
   return (
     <div>
