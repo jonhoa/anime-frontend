@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AnimeShow } from "./AnimeShow";
 import { Link } from "react-router-dom";
-import { handleProductsIndex } from "./handleProductsIndex";
 import { useAxios } from "./useAxios";
 import { fetchHome } from "./fetchHome";
 

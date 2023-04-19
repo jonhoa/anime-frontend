@@ -3,21 +3,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { fetchProfile } from "./fetchProfile";
 
 export function Profile() { 
-  const [user, setUsers] = useState([]);
+  
   const [fav, setFav] = useState([]);
-  const params = useParams();
+  
+const user = fetchProfile();
 
-  const handleProfile = () => {
-    console.log(params.id);
-    axios.get(`http://localhost:3000/user/${params.id}`).then(response =>{
-      console.log(response.data);
-      setUsers(response.data);
-     
-    }
-    );
-  };
   const handleFav = () => {
     axios.get("http://localhost:3000/favorites.json").then(response => {
       console.log(response.data);
@@ -37,7 +30,6 @@ export function Profile() {
     });
   }; 
   console.log(user["pic"]);
-  useEffect(handleProfile, []);
   useEffect(handleFav, []);
 
 

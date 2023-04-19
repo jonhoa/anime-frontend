@@ -26,7 +26,6 @@ export function Login() {
       event.target.reset();
       window.location.href = "/home";
       console.log("logged in");
-      // <Header spic={spic}/>;
     })
       .catch((error) => {
         console.log(error.response);
