@@ -55,7 +55,8 @@ export function ProductsIndex() {
 
 
   const [text, setText] = useState('');
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault()
     axios.get(`https://kitsu.io/api/edge/anime?filter[text]=${text}`).then(response =>{
       console.log(response.data);
       setKitsu(response.data.data);
@@ -76,14 +77,17 @@ export function ProductsIndex() {
            
 
 
-          <div class="col-sm-2">
+        <div class="col-sm-2">
 
-            {/* Search */}
-            <div class="card-search">
-              <div class="card-header">Kitsu Search</div>
-              <input type="search" name= "text" value={text} onChange={event => setText(event.target.value)}></input>
-              <button onClick = {handleSearch} value={text}>Search</button>
-            </div><br/>
+          {/* Search */}
+        <div class="card-search">
+          <div class="card-header">Kitsu Search</div>
+            <form className='form' onSubmit={handleSearch}>
+                <input type="search" name= "text" value={text} onChange={event => setText(event.target.value)}></input>
+                <button className ="btn btn-primary" onClick = {handleSearch} value={text}>Search</button>
+            </form>
+          </div><br/>
+            
 
             <div class="card-home">
               <div class="card-header">Popular</div>
