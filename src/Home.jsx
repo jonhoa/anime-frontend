@@ -133,6 +133,7 @@ export function Home(props) {
             <div class="card-search">
               <div class="card-header">Search</div>
               <input type="search"></input>
+              <button type="submit"><i class="fa fa-search"></i></button>
             </div><br/>
 
             {/* Upcoming */}

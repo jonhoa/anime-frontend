@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+// Fetches User ID and data 
 export function fetchProfile() {
     const [user, setUsers] = useState([]);
     const params = useParams();

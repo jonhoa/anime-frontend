@@ -85,7 +85,7 @@ export function ProductsIndex() {
         <div class="card-search">
           <div class="card-header">Kitsu Search</div>
             <form className='form' onSubmit={handleSearch}>
-                <input type="search" name= "text" value={text} onChange={event => setText(event.target.value)}></input>
+                <input type="search" name= "text" value={text} placeholder ="Search..."  onChange={event => setText(event.target.value)}></input>
                 <button type="submit" onClick = {handleSearch} value={text}>Search</button>
             </form>
           </div><br/>

@@ -260,16 +260,32 @@ a {
    background: linear-gradient(#7c36c2a7,#0e0e0e); 
    /* background: #0e0e0e; */
    color: #aaa;
+   
 }
 .card-search input {
    background: linear-gradient(#a581c9a7,#3c3333); 
    /* background: #0e0e0e; */
    color: #aaa;
+  border: none;
+  cursor: pointer;
    width: 140px;
    height: 20px;
    padding-left:10px;
    margin-left:25px;
 }
+
+
+.card-search button{
+float: right;
+padding: 6px;
+margin-top: 2px;
+background: #ddd;
+width: auto;
+height: auto;
+font-size: 4px;
+border: solid;
+}
+
 .card-header {
    background: linear-gradient(#7c36c2a7,#0e0e0e); 
    /* background: #0e0e0e; */
