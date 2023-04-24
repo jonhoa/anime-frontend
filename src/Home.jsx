@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AnimeShow } from "./AnimeShow";
 import { Link } from "react-router-dom";
-import { useAxios } from "./useAxios";
-import { fetchHome } from "./fetchHome";
+import { fetchHome } from "./api/fetchHome";
+
 
 export function Home(props) { 
   const [start,setStart] = useState(0);

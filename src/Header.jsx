@@ -4,7 +4,7 @@ import { Logout } from "./Logout";
 import logo from './img/logo1.png';
 import axios from "axios";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { fetchProfile } from "./fetchProfile";
+import { fetchProfile } from "./api/fetchProfile";
 
 export function Header() { 
   const jwt = localStorage.getItem("jwt");

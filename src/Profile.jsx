@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { fetchProfile } from "./fetchProfile";
+import { fetchProfile } from "./api/fetchProfile";
 
 export function Profile() { 
   

@@ -3,15 +3,16 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { fetchKitsu } from "./api/fetchKitsu";
 
 export function ProductsIndex() { 
   // Kitsu API TEST
-  const [kitsu, setKitsu] = useState([]);
   const [start,setStart] = useState(0);
   const [next, setNext] = useState("");
   const [prev, setPrev] = useState("");
   const [offset, setOffset] = useState(0);
   const API_BASE = 'https://kitsu.io/api/edge';
+  const [kitsu, setKitsu] = useState([]);
   
   const handleNext = () => {
     console.log("next page");
@@ -52,7 +53,10 @@ export function ProductsIndex() {
     );
   };
   useEffect(handleKitsu, []);
-
+  // const kitsu = fetchKitsu();
+  // const nt = fetchKitsu();
+  // console.log(kitsu.data);
+  // console.log(nt);
 
   const [text, setText] = useState();
   const handleSearch = (e) => {

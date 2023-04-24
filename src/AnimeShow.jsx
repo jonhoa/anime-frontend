@@ -28,6 +28,11 @@ export function AnimeShow() {
   };
   useEffect(handleShow, []);
   
+//Convert long youtube url into id and parse into embed url 
+  var url = `${anime.video}`;
+  var videoId = url.split("?v=")[1];
+
+
   return (
     <div class= "container">
       <div class= "container-body">
@@ -53,8 +58,8 @@ export function AnimeShow() {
             }
             <br/><br/>
             <h2>Trailer</h2><hr/>
-            <iframe src={'https://www.youtube.com/embed/' + anime.video}
-              frameborder='0'
+            <iframe src={'https://www.youtube.com/embed/' + videoId}
+              frameborder='10'
               allow='autoplay; encrypted-media'
               height="350px"
               width ='470vw'
