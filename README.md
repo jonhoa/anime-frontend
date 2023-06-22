@@ -1,5 +1,5 @@
 
-## ANIME WATCH ![1](https://user-images.githubusercontent.com/25704348/232182750-1229b6a3-5b91-4e1a-9258-b191a833fb94.PNG)
+## ANIME WATCH ![1](https://user-images.githubusercontent.com/25704348/232182750-1229b6a3-5b91-4e1a-9258-b191a833fb94.PNG) <a onclick="window.open(this.href,'_blank');return false;" href = "https://animewatch-site.netlify.app">Demo</a>
 
 AnimeWatch is a fullstack app created in Ruby on Rails, and ReactJs. The app utilizes KITSU Api(an unofficial MAL api)to dynamically showcase anime titles in a user-friendly way. The goal behind this project was to combine my interest in Japanese culture with modern-day tv streaming services such as Netflix into one whole app in a well layed-out interface. AnimeWatch helps solve media consuming indecisiveness by allowing users to browse through an array of anime and 'favoriting' the titles they think look cool. Each title has its own description and embedded youtube trailer to help give the user a taste of what each title is all about before adding it into their favorite. On login, a user can head over tothe profile section and view their favorited animes. This helps encourage users to start watching anime based on their favorites or drop titles if they change their mind.
 
