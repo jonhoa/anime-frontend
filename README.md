@@ -1,9 +1,22 @@
 
 ## ANIME WATCH ![1](https://user-images.githubusercontent.com/25704348/232182750-1229b6a3-5b91-4e1a-9258-b191a833fb94.PNG) <a onclick="window.open(this.href,'_blank');return false;" href = "https://animewatch-site.netlify.app">Demo</a>
 
-AnimeWatch is a fullstack app created in Ruby on Rails, and ReactJs. The app utilizes KITSU Api(an unofficial MAL api)to dynamically showcase anime titles in a user-friendly way. The goal behind this project was to combine my interest in Japanese culture with modern-day tv streaming services such as Netflix into one whole app in a well layed-out interface. AnimeWatch helps solve media consuming indecisiveness by allowing users to browse through an array of anime and 'favoriting' the titles they think look cool. Each title has its own description and embedded youtube trailer to help give the user a taste of what each title is all about before adding it into their favorite. On login, a user can head over tothe profile section and view their favorited animes. This helps encourage users to start watching anime based on their favorites or drop titles if they change their mind.
+AnimeWatch is a full-stack app created in Ruby on Rails and ReactJs. This captivating platform utilizes the KITSU API, an unofficial MAL API, to dynamically showcase a vast collection of anime titles in a user-friendly way.
 
+The primary goal behind AnimeWatch is to combine a passion for Japanese culture with the convenience of modern-day TV streaming services like Netflix, all within a well-laid-out and intuitive interface.
 
+Key Features:
+<ul>
+<li>Extensive Anime Catalog: Explore a wide array of anime titles, from beloved classics to the latest releases, all conveniently organized for seamless browsing.</li>
+
+<li>User-Friendly Interface: Enjoy a visually appealing and intuitive interface that makes navigating and discovering anime a delightful experience.</li>
+
+<li>Favorites and Recommendations: Solve media-consuming indecisiveness by "favoriting" the titles that catch your interest. AnimeWatch provides personalized recommendations based on your preferences, making it easier than ever to find your next favorite anime.</li>
+
+<li>Detailed Information: Each anime title comes with a comprehensive description and an embedded YouTube trailer, allowing you to get a taste of the storyline, animation style, and overall vibe before adding it to your favorites.</li>
+
+<li>Profile Section: Upon logging in, users can head to the profile section to view their favorited anime titles. This feature encourages users to start watching anime based on their favorites or drop titles if their preferences change over time.</li>
+</ul>
 ## Screenshots
 ![home1](https://user-images.githubusercontent.com/25704348/232182651-d5bddb10-d4ab-44fa-9f5e-330d12a2545f.PNG)
 
