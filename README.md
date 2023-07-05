@@ -16,7 +16,11 @@ Key Features:
 <li>Detailed Information: Each anime title comes with a comprehensive description and an embedded YouTube trailer, allowing you to get a taste of the storyline, animation style, and overall vibe before adding it to your favorites.</li>
 
 <li>Profile Section: Upon logging in, users can head to the profile section to view their favorited anime titles. This feature encourages users to start watching anime based on their favorites or drop titles if their preferences change over time.</li>
+<li>Accurate synopses and detailed information for each title</li>
+<li>Comprehensive search and filter options</li>
+<li>Perfect for both longtime fans and newcomers to anime</li>
 </ul>
+
 ## Screenshots
 ![home1](https://user-images.githubusercontent.com/25704348/232182651-d5bddb10-d4ab-44fa-9f5e-330d12a2545f.PNG)
 
