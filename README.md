@@ -25,7 +25,11 @@ Immerse yourself in an extraordinary world of anime with AnimeWatch API. Whether
 ## Screenshots
 ![home1](https://user-images.githubusercontent.com/25704348/232182651-d5bddb10-d4ab-44fa-9f5e-330d12a2545f.PNG)
 
-![Capture](https://user-images.githubusercontent.com/25704348/228395042-abe8eb22-be35-4073-8456-28fe074e936d.PNG)
+![Capture](https://user-images.githubusercontent.com/25704348/228395042-abe8eb22-be35-4073-8456-28fe074e936d.PNG) 
+
+![1](https://github.com/jonhoa/anime-frontend/assets/25704348/375b7f24-0c76-42b5-b3e2-6d8461926c85)
+
+![2](https://github.com/jonhoa/anime-frontend/assets/25704348/6936d308-dd0a-493a-bf21-17f9db64dfe8)
 
 ## Tech Stack
 
